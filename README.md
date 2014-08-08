@@ -110,6 +110,10 @@ function cnn_model()
 end
 ```
 
+key parts:
+- Applying the stronger dropout at input layer.
+- SoftSign + Average Pooling is better than ReLU + Max Pooling in this data.
+
 ### Running the leave-one-subject-out CV
 
     th cnn_cv.lua
